@@ -70,28 +70,7 @@ ul, li {
     margin-left: 13px;
     transition: .3s all linear;
 }
-@media (max-width: 412px) {
-    .header-container {
-      flex-direction: column;
-    }
-    .h-50{
-        width: 100%;
-    }
-    .logo{
-        padding: 10px 0;
-    }
-    .right-head{
-        text-align: left;
-        margin-top: 20px;
-    }
-    .head-img{
-        width: 100%;
-    }
-    .head-header{
-        font-size: 48px;
-        margin: 0;
-    }
-  }
+
 
 /*-------------------
      blog css  
@@ -156,20 +135,7 @@ main{
 .art-main-btn:hover i{
     margin-left: 13px;
 }
-@media (max-width: 412px) {
-    main{
-        margin: 50px 0;
-    }
-    .blog-main{
-        margin-top: 20px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr;
-    }
-    .art-btn{
-        text-align: center;
-    }
-  }
+
 
 
 /*-------------------
@@ -187,7 +153,8 @@ main{
 .gallery{
     margin: 50px 0;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
 }
 .gallery img{
     transition: .3s all linear;
@@ -195,17 +162,7 @@ main{
 .gallery img:hover{
     transform: scale(1.1);
 }
-@media (max-width: 412px) {
-    .gallery{
-        margin: 50px 0;
-        display: grid;
-        gap: 20px;
-        width: 100%;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-  }
-
+ 
 /*-------------------
      footer css  
  ------------------*/
@@ -237,3 +194,111 @@ main{
     border-radius: 50%;
 }
 
+
+/*--------------------------------
+     responsive css for mobile
+ ---------------------------------*/
+
+ @media (max-width: 425px) {
+    .gallery{
+        margin: 50px 0;
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+  }
+
+ @media (max-width: 425px) {
+    .header-container {
+      flex-direction: column;
+    }
+    .h-50{
+        width: 100%;
+    }
+    .logo{
+        padding: 10px 0;
+    }
+    .right-head{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .head-img{
+        width: 100%;
+    }
+    .head-header{
+        font-size: 48px;
+        margin: 0;
+    }
+  }
+
+  @media (max-width: 425px) {
+    main{
+        margin: 50px 0;
+    }
+    .blog-main{
+        margin-top: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .art-btn{
+        text-align: center;
+    }
+  }
+ 
+ /*--------------------------------
+     responsive css for tab
+ ---------------------------------*/
+
+ @media screen and (max-width: 820px) and (min-width: 426px) {
+    .header-container {
+      flex-direction: row;
+    }
+    .h-50{
+        width: 50%;
+    }
+    .logo{
+        padding: 20px 0;
+    }
+    .right-head{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .head-img{
+        width: 100%;
+    }
+    .head-header{
+        font-size: 48px;
+        margin: 0;
+    }
+  }
+
+
+ @media screen and (max-width: 820px) and (min-width: 426px) {
+    main{
+        margin: 50px 0;
+    }
+    .blog-main{
+        margin-top: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .art-btn{
+        text-align: center;
+    }
+  }
+
+  
+ @media screen and (max-width: 820px) and (min-width: 426px) {
+    .gallery{
+        margin: 50px 0;
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        grid-template-columns:repeat(2, 1fr);
+        justify-items: center;
+    }
+  }
