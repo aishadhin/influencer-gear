@@ -69,3 +69,53 @@ ul, li {
     margin-left: 13px;
     transition: .3s all linear;
 }
+
+/*-------------------
+     blog css  
+ ------------------*/
+main{
+    margin: 80px 0;
+}
+.blog-main{
+    margin-top: 50px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.blog-head{
+    text-align: center;
+}
+.blog-head h3{
+    color: #3A3A3A;
+    font-size: 28px;
+    font-weight: 700;
+}
+.blog-part{
+    padding: 14px;
+    box-shadow: 0px 0px 40px 0px #00000015;
+    border-radius: 10px;
+}
+.blog-part img{
+    width: 100%;
+}
+.blog-part > h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: #18191F;
+    margin: 10px 0;
+}
+.blog-part .blog-price{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    margin: 10px 0;
+}
+.blog-part > i{
+    font-size: 14px;
+    color: #FB8200;
+}
+.blog-part .blog-con{
+    font-size: 14px;
+    color: #787885;
+    font-weight: 600;
+}
