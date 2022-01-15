@@ -35,8 +35,6 @@ ul, li {
 
  .header-container{
      display: flex;
-     justify-content: space-between;
-     align-items: center;
  }
  .h-50{
      width: 50%;
@@ -72,6 +70,28 @@ ul, li {
     margin-left: 13px;
     transition: .3s all linear;
 }
+@media (max-width: 412px) {
+    .header-container {
+      flex-direction: column;
+    }
+    .h-50{
+        width: 100%;
+    }
+    .logo{
+        padding: 10px 0;
+    }
+    .right-head{
+        text-align: left;
+        margin-top: 20px;
+    }
+    .head-img{
+        width: 100%;
+    }
+    .head-header{
+        font-size: 48px;
+        margin: 0;
+    }
+  }
 
 /*-------------------
      blog css  
@@ -123,6 +143,33 @@ main{
     color: #787885;
     font-weight: 600;
 }
+.art-btn{
+    text-align: right;
+    margin-top: 20px;
+}
+.art-main-btn{
+    color:#E02C6D;
+}
+.art-main-btn i{
+    transition: .3s all linear;
+}
+.art-main-btn:hover i{
+    margin-left: 13px;
+}
+@media (max-width: 412px) {
+    main{
+        margin: 50px 0;
+    }
+    .blog-main{
+        margin-top: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    .art-btn{
+        text-align: center;
+    }
+  }
 
 
 /*-------------------
@@ -148,6 +195,16 @@ main{
 .gallery img:hover{
     transform: scale(1.1);
 }
+@media (max-width: 412px) {
+    .gallery{
+        margin: 50px 0;
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+  }
 
 /*-------------------
      footer css  
